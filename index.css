@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap');
+  @media
+(prefers-reduced-motion: no-preference) {
+html {
+    scroll-behavior: smooth;
+}
+}
+::before,
+::after {
+box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* height: 2000vh; */
+    background-color: #74EBD5;
+    background-image: -webkit-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-image: -moz-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-image: -o-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+}
+a,p{
+    text-decoration: none;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: bold;
+}
+.navbar {
+    padding: 13px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 23px;
+    display: flex;
+    background-color: #9FACE6;
+    border-radius: 28px;
+    justify-content: center;
+    width: 100px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.active {
+    background-color: #e4a7a7;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+  .btn-grad:hover {
+    justify-content: center;
+    text-decoration: none;
+  }
+ 
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    /* z-index: 9999; */
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: rgb(235, 222, 222);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e4a7a7;
+}
+section{
+    height: 100vh;
+    padding: 30px;
+    /* margin: 30px; */
+}
+.excel{
+    margin-top: 30px;
+    height: 450px;
+    width: 1000px;
+    align-self: center;
+}
+.excl:hover{
+    font-size: larger;
+}
+/* CSS Card*/
+.card
+{
+    width:250px;
+    height: 300px;
+    /* margin: 20px auto; */
+    border: 3px solid rgba(0,0,0,.125);
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    opacity: 0.7;
+    transition: all 0.5s linear;
+}
+.card:hover
+{
+    opacity: 1;
+    border: 3px solid #e84444;
+}
+.card h3
+{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #e84444;
+}
+.card img
+{
+    width: 100%;
+}
+.card p
+{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 23px;
+    color: #666;
+    transition: all 0.5s linear;
+}
+.card:hover p
+{
+    color: black;
+}
+.card_container{
+    display: flex;
+    margin-top: 20px;
+    gap: 5px;
+    justify-content: space-between;
+}
+h1, h3{
+    font-family: 'Ysabeau', sans-serif;
+}
+/* .main-div {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(5, 1fr);
+gap: 10px;
+}
+
+.main-div div {
+background-color: #ccc;
+border: 1px solid #999;
+padding: 10px;
+} */
+.main-div {
+padding-top: 20px;
+display: grid;
+grid-template-columns: repeat(2, 2fr); /* 2 columns with equal width */
+gap: 20px; /* gap between rows and columns */
+margin: 0 auto; /* center align the container */
+}
+
+.row {
+display: grid;
+grid-template-columns: 1fr; /* 1 column with equal width */
+gap: 10px; /* gap between columns */
+}
+
+.col {
+background-color: #ccc;
+padding: 10px;
+/* text-align: center; */
+
+}
+.row .col{
+    height: 86vh;
+
+}
+.col img{
+    margin-top: 53px;
+
+}
+.opt{
+    margin-right: auto;
+    /* width: 90%; */
+    display: block;
+    margin-left: auto;
+}
+.main {
+    margin-top: 30px;
+display: flex;
+justify-content: space-between;
+height: 40vh;
+}
+
+.car {
+/* width: 100px; */
+height: 400px;
+margin: 0px 10px;
+background-color: #ff0000;
+cursor: pointer;
+position: relative;
+top: 0px;
+left: 0px;
+border-radius: 20px;
+box-shadow: 1px 1px 5px 0px rgba(82, 82, 82, 0.75);
+transition: all 150ms ease-in-out;
+}
+.car img{
+width: 100%;
+height: 100%;
+}
+.car:hover {
+top: -3px;
+left: -3px;
+box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+}
+.car:active {
+top: 2px;
+left: 2px;
+box-shadow: inset 0 0 10px rgba(82, 82, 82, 0.85);
+}
+
+body{
+margin:0;
+overflow-x:hidden;
+}
+
+.footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .rows{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .rows a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .rows a:hover{
+color:#fff;
+}
+
+.footer .rows ul{
+width:100%;
+}
+
+.footer .rows ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .rows a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .rows ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .rows a i{
+margin:0% 3%;
+}
+}
